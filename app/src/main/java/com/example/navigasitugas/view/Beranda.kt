@@ -47,6 +47,13 @@ fun Beranda(
                 contentScale = ContentScale.Fit
             )
             Spacer(modifier = Modifier.height(height = 30.dp))
+            Text(text = stringResource(R.string.namaku),
+                modifier = Modifier,
+                fontFamily = FontFamily.Serif,
+                fontSize = 30.sp,
+                color = colorResource(R.color.purple_200),
+                )
+            Spacer(modifier = Modifier.height(height = 10.dp))
         }
     }
 }
