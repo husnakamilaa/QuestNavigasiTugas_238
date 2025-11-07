@@ -53,7 +53,14 @@ fun Beranda(
                 fontSize = 30.sp,
                 color = colorResource(R.color.purple_200),
                 )
-            Spacer(modifier = Modifier.height(height = 10.dp))
+            Spacer(modifier = Modifier.height(height = 5.dp))
+            Text(text = stringResource(R.string.nimku),
+                modifier = Modifier,
+                fontFamily = FontFamily.Serif,
+                fontSize = 20.sp,
+                color = colorResource(R.color.black),
+            )
+            Spacer(modifier = Modifier.height(height = 30.dp))
         }
     }
 }
