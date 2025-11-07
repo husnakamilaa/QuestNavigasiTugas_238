@@ -9,6 +9,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.navigasitugas.view.Beranda
+import com.example.navigasitugas.view.ListData
 
 enum class Navigasi {
     Beranda,
