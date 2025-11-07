@@ -4,6 +4,8 @@ package com.example.navigasitugas.view
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
@@ -16,6 +18,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.navigasitugas.R
 
@@ -36,7 +39,7 @@ fun Beranda(
                 fontSize = 40.sp,
                 color = colorResource(R.color.purple_200)
             )
-
+            Spacer(modifier = Modifier.height(height = 30.dp))
         }
     }
 }
