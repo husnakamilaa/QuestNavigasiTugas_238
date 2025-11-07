@@ -10,6 +10,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.navigasitugas.view.Beranda
+import com.example.navigasitugas.view.Formulir
 import com.example.navigasitugas.view.ListData
 
 enum class Navigasi {
@@ -25,8 +26,9 @@ fun DataApp(
 ) {
     Scaffold { isiRuang->
         NavHost(
-            navController = NavController,
+            navController = navController,
             startDestination = Navigasi.Beranda.name,
+
             modifier = Modifier.padding(paddingValues = isiRuang)
         ) {
             composable(route = Navigasi.Beranda.name) {
@@ -40,12 +42,12 @@ fun DataApp(
                 ListData(
                     OnFormulirBtnClick = {
                         navController.navigate(route = Navigasi.Formulir.name)
-                    }
+                    },
                     OnBackToBeranda = {backToBeranda(navController)}
                 )
             }
             composable(route= Navigasi.Formulir.name) {
-                Formulir(
+                Formulir (
                     OnBackToListData = {backToListData(navController)}
                 )
             }
