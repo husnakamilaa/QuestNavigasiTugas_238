@@ -8,6 +8,9 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -61,6 +64,13 @@ fun Beranda(
                 color = colorResource(R.color.black),
             )
             Spacer(modifier = Modifier.height(height = 30.dp))
+            Button(modifier = Modifier
+                .width(280.dp),
+                onClick = OnListDataBtnClick,
+                colors = ButtonDefaults.buttonColors(colorResource(R.color.purple_200)))
+            {
+                Text(text = stringResource(R.string.submit))
+            }
         }
     }
 }
