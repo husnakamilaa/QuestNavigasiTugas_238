@@ -81,6 +81,15 @@ fun ListData(
                 onClick = OnBackToBeranda) {
                 Text(text = stringResource(R.string.beranda))
             }
+            Spacer(modifier = Modifier.height(15.dp))
+            Button(modifier = Modifier
+                .width(400.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFFDCA2E6)
+                ),
+                onClick = OnFormulirBtnClick) {
+                Text(text = stringResource(R.string.formulir))
+            }
         }
     }
 }
